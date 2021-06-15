@@ -10,7 +10,10 @@
 }
 
 body{
-    background: var(--preto);
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/JS/img/Medina.jpg) no-repeat;
+    height: 450px;
+    background-size: cover;
+    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
@@ -23,13 +26,14 @@ header .container{
     justify-content: space-between;
     padding: 0 40.46px;
     height: 68px;
-    width: 931.067px;
+    width: 100%;
 }
 
 header .Logo{
     color: var(--azul);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
+    cursor: pointer;
 }
 
 header nav a{
@@ -44,13 +48,38 @@ header nav a:hover{
 
 }
 
+.icons{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-icons{
+    margin-right: 15px;
+}
+
+.nav-icons img{
+    width: 40px;
+    margin: 15px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.nav-icons a i{
+    font-size: 25px;
+    color: white;
+}
+
+.nav-icons a i:hover{
+    color: #ccc;
+}
+
 /*Filme Principal*/
 
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/JS/img/Medina.jpg);
-    height: 450px;
-    background-size: cover;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,6 +153,7 @@ header nav a:hover{
     width: 100%;
     display: block;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .carrossel-filmes{
