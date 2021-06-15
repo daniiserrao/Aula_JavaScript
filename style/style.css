@@ -1,0 +1,137 @@
+:root{
+    --azul: #09dee5;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/*Cabeçalho do site*/
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40.46px;
+    height: 68px;
+    width: 931.067px;
+}
+
+header .Logo{
+    color: var(--azul);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+
+}
+
+header nav a:hover{
+    color: #aaa;
+
+}
+
+/*Filme Principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/JS/img/Medina.jpg);
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container{
+    padding-left: 40.46px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.filme-principal .descricao{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.filme-principal .container{
+    width: 380px;
+
+}
+
+.botao1{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 6.96px 20.88px 6.96px 17.4px;
+    margin: 0 8.7px 8.7px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .1s ease all;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botao1:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.botao1 i{
+    margin-right: 8.7px;
+}
+
+.botao2{
+    background-color: rgba(109,109,110,0.7);
+    border: none;
+    color: white;
+    padding: 6.96px 20.88px 6.96px 17.4px;
+    margin: 0 8.7px 8.7px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .1s ease all;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botao2:hover{
+    background-color: rgba(109,109,110,0.2);
+}
+
+.botao2 i{
+    margin-right: 8.7px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
+    padding-left: 40.46px;
+}
+
+.em-alta{
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
